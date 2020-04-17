@@ -26,4 +26,4 @@ echo "Executing provision.sh"
 nohup /usr/local/bin/provision.sh &
 
 # Start nexus as the nexus user
-su -c "${SONATYPE_DIR}/start-nexus-repository-manager.sh" -s /bin/sh nexus
+${/SONATYPE_DIR}/start-nexus-repository-manager.sh -s /bin/sh nexus
